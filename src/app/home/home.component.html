@@ -1,0 +1,17 @@
+<main id="main">
+  <div class="movie" *ngFor="let item of dataResults">
+    <img
+      src="https://image.tmdb.org/t/p/w500/{{ item.poster_path }}"
+      onerror="this.src= 'https://www.popdaily.com.tw/shaper/u/202008/6edddbda-9472-4360-a6fd-7e3b30a3c06d.jpg?resize-w=900&resize-h=900';"
+      alt="image"
+    />
+    <div class="movie-info">
+      <h3>{{ item.original_title }}</h3>
+      <span class="yellow">{{ item.popularity }}</span>
+    </div>
+    <div class="overview">
+      <h3>Overview</h3>
+      {{ item.overview }}
+    </div>
+  </div>
+</main>
