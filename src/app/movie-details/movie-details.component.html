@@ -1,0 +1,21 @@
+<div class="container">
+  <p style="color: white">
+    電影介紹 <br />
+    <strong>{{ overviews }}</strong> <br />
+    Popularity: {{ popularities }}
+  </p>
+  <div class="col-4">
+    <div class="card" style="width: 18rem" *ngFor="let cast of casts">
+      <img
+        src="https://image.tmdb.org/t/p/w500/{{ cast.profile_path }}"
+        onerror="this.src= '../../assets/images/default-movie.png';"
+        alt="image"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <p class="card-text">{{ cast.original_name }}</p>
+      </div>
+    </div>
+  </div>
+</div>

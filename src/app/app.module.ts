@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MovieComponent } from './movie/movie.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 const appRoutes: Routes = [];
 @NgModule({
@@ -19,7 +21,9 @@ const appRoutes: Routes = [];
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MovieComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,
